@@ -125,7 +125,8 @@ const projectData = {
       'Evaluates recovery time, availability, and error-rate objectives before generating JSON and Markdown evidence reports.',
       'Uses GitHub Actions for automated testing, Docker builds, dry-run validation, and Trivy container security scanning.'
     ],
-    tech: ['Kubernetes', 'Python', 'Docker', 'GitHub Actions', 'SRE', 'SLO', 'Trivy']
+    tech: ['Kubernetes', 'Python', 'Docker', 'GitHub Actions', 'SRE', 'SLO', 'Trivy'],
+    url: 'https://github.com/hemantsharma2189/cloud-resilience-gameday-orchestrator'
   }
 };
 
@@ -134,6 +135,7 @@ const modalTitle = document.getElementById('modal-title');
 const modalDescription = document.getElementById('modal-description');
 const modalFeatures = document.getElementById('modal-features');
 const modalTech = document.getElementById('modal-tech');
+const modalProjectLink = modal.querySelector('.btn-primary');
 let lastFocusedElement = null;
 
 function openModal(projectKey) {
@@ -144,6 +146,10 @@ function openModal(projectKey) {
   modalDescription.textContent = project.description;
   modalFeatures.innerHTML = project.features.map((item) => `<li>${item}</li>`).join('');
   modalTech.innerHTML = project.tech.map((item) => `<span>${item}</span>`).join('');
+  modalProjectLink.href = project.url || 'https://github.com/hemantsharma2189';
+  modalProjectLink.innerHTML = project.url
+    ? 'View GitHub Repository <span>↗</span>'
+    : 'View GitHub Profile <span>↗</span>';
   modal.classList.add('open');
   modal.setAttribute('aria-hidden', 'false');
   document.body.classList.add('modal-open');
