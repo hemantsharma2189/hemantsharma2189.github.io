@@ -113,7 +113,19 @@ const projectData = {
       'Runs tests, builds images, updates manifests, and initiates controlled releases through GitHub Actions.',
       'Generates explanations describing why a rollout succeeded, paused, or rolled back.'
     ],
-    tech: ['Kubernetes', 'Docker', 'GitHub Actions', 'Prometheus', 'Argo Rollouts', 'CI/CD']
+     tech: ['Kubernetes', 'Docker', 'GitHub Actions', 'Prometheus', 'Argo Rollouts', 'CI/CD']
+  },
+  gameday: {
+    title: 'Cloud Resilience GameDay Orchestrator',
+    description: 'A safety-first Kubernetes resilience platform that tests workload recovery through controlled failure experiments.',
+    features: [
+      'Validates YAML-based failure scenarios and measurable recovery objectives using Pydantic.',
+      'Protects critical namespaces and requires explicit approval before live failure injection.',
+      'Performs controlled pod termination and monitors Kubernetes Deployment recovery.',
+      'Evaluates recovery time, availability, and error-rate objectives before generating JSON and Markdown evidence reports.',
+      'Uses GitHub Actions for automated testing, Docker builds, dry-run validation, and Trivy container security scanning.'
+    ],
+    tech: ['Kubernetes', 'Python', 'Docker', 'GitHub Actions', 'SRE', 'SLO', 'Trivy']
   }
 };
 
