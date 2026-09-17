@@ -126,7 +126,20 @@ const projectData = {
       'Uses GitHub Actions for automated testing, Docker builds, dry-run validation, and Trivy container security scanning.'
     ],
     tech: ['Kubernetes', 'Python', 'Docker', 'GitHub Actions', 'SRE', 'SLO', 'Trivy'],
-    url: 'https://github.com/hemantsharma2189/cloud-resilience-gameday-orchestrator'
+        url: 'https://github.com/hemantsharma2189/cloud-resilience-gameday-orchestrator'
+  },
+  preview: {
+    title: 'Self-Service Ephemeral Environment Platform',
+    description: 'A PR-driven platform that creates validated plans for secure, temporary Kubernetes preview environments.',
+    features: [
+      'Converts pull-request metadata into isolated Kubernetes environment plans with unique namespaces and preview URLs.',
+      'Rejects mutable image tags, limits environment TTL, and applies CPU, memory, and pod resource quotas.',
+      'Generates secure Deployment, Service, Ingress, Namespace, and ResourceQuota manifests.',
+      'Estimates CPU and memory costs and produces JSON, YAML, and Markdown evidence artifacts.',
+      'Uses GitHub Actions for pull-request automation, testing, Docker validation, and Trivy security scanning.'
+    ],
+    tech: ['Kubernetes', 'Python', 'Docker', 'GitHub Actions', 'Platform Engineering', 'CI/CD'],
+    url: 'https://github.com/hemantsharma2189/self-service-ephemeral-environment-platform'
   }
 };
 
